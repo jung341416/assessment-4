@@ -25,7 +25,7 @@ Everyone loves going on Craigslist to find interesting people and interesting it
 Here are a list of the routes you will need to build:
 - `/categories`: A page listing all the categories
 - `/categories/new`: A page with a form to create a new category
-- `/categories/:category_id`: A page to view the detail of a specific category and a list of all of its associated posts
+- `/categories/:category_id`: A page to view the detail of a specific category and a list of all of its associated posts 
 - `/categories/:category_id/edit`: A page with a form to update a specific category, with current values filled in already. Also include the ability to delete the specific category here. 
 - `/categories/:category_id/delete`: A page with a form to update a specific category, with current values filled in already. Also include the ability to delete the specific category here. 
 - `/categories/:category_id/posts/new`: A page with a form to create a new post, under the current category by default.
