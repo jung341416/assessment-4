@@ -6,11 +6,12 @@ Post List
 {% endblock %}
 
 {% block main-content %}
-    <h1>Category: {{category.name}}</h1>
-    <h1>Posts:</h1>
+    <h1>Posts for {{category.name}}</h1>
     <ul>
-        {% for post in category.posts.all %}
-        <li><a href="{% url 'post_detail' category.id post.id %}">{{ post.title }}</a></li>
-        {% endfor %}
+    {% for post in category.posts.all %}
+    <li><a href="{% url 'post_detail' category.id post.id %}">{{post.title}}</a></li>
+    {% endfor %}
     </ul>
+    <hr>
+   <a href="{% url 'post_new' category.id %}"><button>Add Post</button></a>
 {% endblock %}  

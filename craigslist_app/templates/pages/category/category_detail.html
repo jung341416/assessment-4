@@ -8,7 +8,9 @@
 {% block main-content %}
       <h1>{{ category.name }}</h1>
       <p>Description: {{category.description}}</p>
+      <a href="{% url 'post_list' category.id%}"><button>Posts</button></a>
 
 <hr>
-<a href="{% url 'post_list' category.id %}"><button>View Posts</button></a>
+<a href="{% url 'category_edit' category.id %}"><button>Edit</button></a>
+<a href="{% url 'category_delete' category.id %}"><button>Delete</button></a>
 {% endblock %}  
